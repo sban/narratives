@@ -14,7 +14,10 @@ The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 ``` r
 library(dsgrammar)
 
-![](Cynthia-i-am.pdf)
+<p align="center">
+  <img src="Cynthia-i-am.pdf" width="350" title="hover text">
+</p>
+
 
 ## License
 
