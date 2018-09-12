@@ -14,6 +14,8 @@ The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 ``` r
 library(dsgrammar)
 
+![](Cynthia-i-am.pdf)
+
 ## License
 
 This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
