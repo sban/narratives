@@ -14,7 +14,7 @@ The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 ``` r
 library(dsgrammar)
 
-![myimage-alt-tag](url-to-image)
+![myimage-alt-tag]( narratives/Cynthia-i-am.pdf)
 
 
 ## License
