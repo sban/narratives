@@ -5,14 +5,14 @@ A program for the statistical software program R to perform digital semantic gra
 Install the program by downloading the file "DSG.R" and run the following command in R: <br/>
 
 ``` r
-library("dsgrammar")
+library(dsgrammar)
 ```
 
 ##  Usage
 The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 
 ``` r
-library("dsgrammar")
+library(dsgrammar)
 
 ## License
 
