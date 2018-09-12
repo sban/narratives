@@ -14,7 +14,7 @@ The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 ``` r
 library(dsgrammar)
 
-![network](narratives/Cynthia-i-am.pdf)
+![](Cynthia-i-am.pdf)
 
 ## License
 
