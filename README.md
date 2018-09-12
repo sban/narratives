@@ -2,12 +2,17 @@
 A program for the statistical software program R to perform digital semantic grammar analyses on qualitative data
 
 ## Install
-Install the program by downloading the file "DSG.R" and run the following command in R:
+Install the program by downloading the file "DSG.R" and run the following command in R: <br/>
 
 ``` r
-source("DSG.R")
+library("dsgrammar")
 ```
 
+##  Usage
+The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
+
+``` r
+library("dsgrammar")
 
 ## License
 
