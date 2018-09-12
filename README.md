@@ -1,8 +1,7 @@
 # Digital Semantic Grammar
 A program for the statistical software program R to perform digital semantic grammar analyses on qualitative data
 
-Install
--------
+## Install
 Install the program by downloading the file "DSG.R" and run the following command in R:
 
 ``` r
