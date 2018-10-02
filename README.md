@@ -1,5 +1,5 @@
-# Digital Story Grammar
-A program for the statistical software program R to perform digital story grammar analyses on textual data
+# The Digital Story Grammar package (DSG)
+A package for the statistical software program R to perform digital story grammar analyses on textual data
 
 ## Install
 Install the program by downloading the file "DSG.R" and run the following command in R: <br/>
@@ -12,7 +12,7 @@ library(dsgrammar)
 The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 
 ``` r
-library(dsgrammar)
+library(DSG)
 
 ![myimage-alt-tag]( narratives/Cynthia-i-am.pdf)
 
