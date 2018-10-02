@@ -2,7 +2,7 @@
 A package for the statistical software program R to perform digital story grammar analyses on textual data
 
 ## Install
-Install the program by downloading the file "DSG.R" and run the following command in R: <br/>
+Install the program by downloading the DSG-package from this site and run the following command in R: <br/>
 
 ``` r
 library(DSG)
