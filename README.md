@@ -12,7 +12,7 @@ load(DSG)
 The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 
 System pipeline
-<img src="https://github.com/sban/narratives/blob/master/SystemPipelineW.png" width="48">
+<img src="https://github.com/sban/narratives/blob/master/SystemPipelineW.png" >
 
 
 
