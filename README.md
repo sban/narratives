@@ -5,8 +5,11 @@ A package for the statistical software program R to perform digital story gramma
 Install the program by downloading the DSG-package from this site and run the following command in R: <br/>
 
 ``` r
-library(DSG)
+load(DSG)
 ```
+## System pipeline
+
+
 
 ##  Usage
 The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
