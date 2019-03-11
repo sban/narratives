@@ -8,7 +8,7 @@ Install the program by downloading the DSG-package from this site and run the fo
 load(DSG)
 ```
 ## System pipeline
-![alt text](https://github.com/sban/narratives/blob/master/SystemPipeline.png)
+<img src="https://github.com/sban/narratives/blob/master/SystemPipeline.png" width="48">
 
 
 ##  Usage
