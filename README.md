@@ -18,8 +18,8 @@ The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
 > txt <- c("The red fox jumped the fence", 
          "the brown cat likes milk", 
          "the red fox hates the cat")
-> svo.res <- SVO(txt)
-> svo.res
+> dsg.res <- DSG(txt)
+> dsg.res
   SubSen   S      V     O                          txt
 1      1 fox jumped fence The red fox jumped the fence
 2      1 cat  likes  milk     the brown cat likes milk
