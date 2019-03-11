@@ -7,12 +7,14 @@ Install the program by downloading the DSG-package from this site and run the fo
 ``` r
 load(DSG)
 ```
-## System pipeline
-<img src="https://github.com/sban/narratives/blob/master/SystemPipeline.png" width="48">
-
 
 ##  Usage
 The package requires `plyr`,`rJava`, `NLP`, `openNLP` and `stingr`
+
+System pipeline
+<img src="https://github.com/sban/narratives/blob/master/SystemPipelineW.png" width="48">
+
+
 
 ``` r
 > txt <- c("The red fox jumped the fence", 
