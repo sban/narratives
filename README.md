@@ -28,5 +28,9 @@ System pipeline
 3      1 fox  hates   cat     red      brown    the red fox hates the brown cat
 ```
 
+The result can easily be plotted as a network graph.
+
+<img src="https://github.com/sban/narratives/blob/master/network.png" >
+
 
 
