@@ -17,13 +17,13 @@ System pipeline
 
 
 ``` r
-> txt <- c("The red fox jumped the high fence", 
+> txt <- c("The red fox jumped the old fence", 
          "the brown cat likes milk", 
          "the red fox hates the brown cat")
 > dsg.res <- DSG(txt)
 > dsg.res
   SubSen   S      V     O     S.mod    O.mod    txt
-1      1 fox jumped fence     red      high     The red fox jumped the fence
+1      1 fox jumped fence     red      high     The red fox jumped the old fence
 2      1 cat  likes  milk     brown    -        the brown cat likes milk
 3      1 fox  hates   cat     red      brown    the red fox hates the brown cat
 ```
