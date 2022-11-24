@@ -11,7 +11,7 @@ Volume 141. https://doi.org/10.1016/j.futures.2022.102986.
 
 
 ## Install
-Install the program by downloading the DSG-program file from this site and run the following commands in python: <br/>
+Install the program by downloading the DSG-program file from this site (DSG.py), save the file to your working directory for your analysis, and run the following commands in python: <br/>
 
 ```python
 
@@ -34,8 +34,8 @@ The program takes two options: the model (model) and where to place the output f
          "the brown cat likes milk",
          "the red fox hates the brown cat"]
 
-
->>>result = dsg.DSG(text, out_file = 'test.csv')
+>>>model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
+>>>result = dsg.DSG(text, model = model_SRL, out_file = 'test.csv')
 ```
 
 The result is stored as a DataFrame and includes variabel information about the subject (S), the verb (V), the object (O), the means for the action (M), the place (P), time (T) and the tagged sentence (txt):
