@@ -42,10 +42,10 @@ The result is stored as a DataFrame and includes variabel information about the 
 
 ```python
 >>>result
-               S         V               O       M             P               T               txt
-0     The red fox   jumped   the old fence       -             -        yesterday         [ARG0: The red fox] [V: jumped] [ARG1: the old...  
-1     the red fox     hits         the dog     paw             -               -          The red fox jumped the old fence . [ARG0: the
-2   the red foxes    hates   the brown cat       -      in the UK              -          The red fox jumped the old fence . the brown c...  
+               S         V               O                M             P               T               txt
+0     The red fox   jumped   the old fence                -             -        yesterday         [ARG0: The red fox] [V: jumped] [ARG1: the old...  
+1     the red fox     hits         the dog     with her paw             -               -          The red fox jumped the old fence . [ARG0: the
+2   the red foxes    hates   the brown cat                -      in the UK              -          The red fox jumped the old fence . the brown c...  
 
 [3 rows x 7 columns]
 >>> 
