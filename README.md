@@ -31,7 +31,7 @@ The program takes two options: the model (model) and where to place the output f
 
 ```python
 >>>text = ["the red fox jumped the old fence yesterday",
-         "the brown cat hit the dog with her paw",
+         "the red fox hits the dog with her paw",
          "the red foxes hate brown dogs in the UK"]
 
 >>>model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
@@ -44,7 +44,7 @@ The result is stored as a DataFrame and includes variabel information about the 
 >>>result
                S         V               O       M      P                 T            txt
 0     The red fox   jumped   the old fence       -      -          yesterday      [ARG0: The red fox] [V: jumped] [ARG1: the old...  
-1   the brown cat      hit         the dog     paw      -                  -      The red fox jumped the old fence . [ARG0: the
+1   the red fox       hits         the dog     paw      -                  -      The red fox jumped the old fence . [ARG0: the
 2     the red fox    hates   the brown cat       -      in the UK          -      The red fox jumped the old fence . the brown c...  
 
 [3 rows x 7 columns]
