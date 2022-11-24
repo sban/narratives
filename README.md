@@ -13,7 +13,7 @@ Volume 141. https://doi.org/10.1016/j.futures.2022.102986.
 ## Install
 Install the program by downloading the DSG-program file from this site and run the following commands in python: <br/>
 
-``` r
+```python
 
 from allennlp.predictors.predictor import Predictor
 import pandas as pd
@@ -29,7 +29,7 @@ https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-
 
 The program takes two options: the model (model) and where to place the output file (out_file) saved in CSV-format.
 
-``` r
+```python
 >>>text = ["The red fox jumped the old fence",
          "the brown cat likes milk",
          "the red fox hates the brown cat"]
