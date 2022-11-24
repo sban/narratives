@@ -1,6 +1,6 @@
 # The Digital Story Grammar package (DSG)
 
-A simple program wrapper with a few modifications to perform digital story grammar (DSG) analyses on textual data in Python using AllenNLP. 
+A simple wrapper program with a few modifications to perform digital story grammar (DSG) analyses on textual data in Python using the AllenNLP framework. 
 
 For empirical examples of DSG see 
 
