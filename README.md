@@ -2,7 +2,7 @@
 
 A simple wrapper program to perform digital story grammar (DSG) analyses on textual data in Python using the AllenNLP framework. 
 
-For empirical examples of DSG see 
+For empirical examples that also present the theory behind DSG, please see:
 
 Andrade SB & Andersen D (2020). Digital story grammar: a quantitative methodology for narrative analysis. International Journal of Social Research Methodology. Volume 23, Issue 4. https://doi.org/10.1080/13645579.2020.1723205
 
