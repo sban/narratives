@@ -41,7 +41,7 @@ The program takes two options: the model (model) and where to place the output f
 The result is stored as a DataFrame and includes variabel information about the subject (S), the verb (V), the object (O), the means for the action (M), the place (P), time (T) and the tagged sentence (txt):
 
 ```python
-
+>>>result
                S         V               O       M      P                 T            txt
 0     The red fox   jumped   the old fence       -      -          yesterday      [ARG0: The red fox] [V: jumped] [ARG1: the old...  
 1   the brown cat      hit         the dog     paw      -                  -      The red fox jumped the old fence . [ARG0: the
