@@ -30,9 +30,9 @@ https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-
 The program takes two options: the model (model) and where to place the output file (out_file) saved in CSV-format.
 
 ```python
->>>text = ["the red fox jumped the old fence yesterday",
-         "the red fox hits the dog with her paw",
-         "the red foxes hate brown dogs in the UK"]
+>>>text = ["Yesterday, the red fox jumped the old fence.",
+         "the red fox hits the dog with her paw.",
+         "In the UK, the red foxes hate brown dogs."]
 
 >>>model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
 >>>result = dsg.DSG(text, model = model_SRL, out_file = 'test.csv')
