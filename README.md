@@ -30,9 +30,9 @@ https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-
 The program takes two options: the model (model) and where to place the output file (out_file) saved in CSV-format.
 
 ```python
->>>text = ["The red fox jumped the old fence",
-         "the brown cat likes milk",
-         "the red fox hates the brown cat"]
+>>>text = ["the red fox jumped the old fence yesterday",
+         "the brown cat hit the dog with her paw",
+         "the red foxes hate brown dogs in the UK"]
 
 >>>model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
 >>>result = dsg.DSG(text, model = model_SRL, out_file = 'test.csv')
@@ -42,10 +42,10 @@ The result is stored as a DataFrame and includes variabel information about the 
 
 ```python
 
-               S        V               O  M  P  T   txt
-0     The red fox   jumped   the old fence  -  -  -  [ARG0: The red fox] [V: jumped] [ARG1: the old...  
-1   the brown cat    likes            milk  -  -  -  The red fox jumped the old fence . [ARG0: the
-2     the red fox    hates   the brown cat  -  -  -  The red fox jumped the old fence . the brown c...  
+               S         V               O       M      P                 T            txt
+0     The red fox   jumped   the old fence       -      -          yesterday      [ARG0: The red fox] [V: jumped] [ARG1: the old...  
+1   the brown cat      hit         the dog     paw      -                  -      The red fox jumped the old fence . [ARG0: the
+2     the red fox    hates   the brown cat       -      in the UK          -      The red fox jumped the old fence . the brown c...  
 
 [3 rows x 7 columns]
 >>> 
