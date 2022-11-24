@@ -35,15 +35,21 @@ The program takes two options: the model (model) and where to place the output f
          "the red fox hates the brown cat"]
 
 
->>>dsg.DSG(text, out_file = 'test.csv')
-The red fox jumped the old fence. the brown cat likes milk. the red fox hates the brown cat
-                S        V  ...  T                                                txt
-0     The red fox   jumped  ...  -  [ARG0: The red fox] [V: jumped] [ARG1: the old...
-1   the brown cat    likes  ...  -  The red fox jumped the old fence . [ARG0: the ...
-2     the red fox    hates  ...  -  The red fox jumped the old fence . the brown c...
+>>>result = dsg.DSG(text, out_file = 'test.csv')
+```
+
+The result is stored as a DataFrame and includes variabel information about the subject (S), the verb (V), the object (O), the means for the action (M), the place (P), time (T) and the tagged sentence (txt):
+
+```python
+
+               S        V               O  M  P  T   txt
+0     The red fox   jumped   the old fence  -  -  -  [ARG0: The red fox] [V: jumped] [ARG1: the old...  
+1   the brown cat    likes            milk  -  -  -  The red fox jumped the old fence . [ARG0: the
+2     the red fox    hates   the brown cat  -  -  -  The red fox jumped the old fence . the brown c...  
 
 [3 rows x 7 columns]
 >>> 
+```
 
 
 
