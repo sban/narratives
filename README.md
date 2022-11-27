@@ -22,7 +22,7 @@ import DSG as dsg
 
 ```
 
-##  Usage
+##  Usage 
 The module also requires a SRL model. For example, this excellent public model by AllenNLP:
 
 https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz
@@ -30,18 +30,18 @@ https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-
 The program takes two options: the model (model) and where to place the output file (out_file) saved in CSV-format.
 
 ```python
->>>text = ["Yesterday, the red fox jumped the old fence.",
+>>> text = ["Yesterday, the red fox jumped the old fence.",
          "The red fox hits the dog with her paw.",
          "In the UK, the red foxes hate brown dogs."]
 
->>>model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
->>>result = dsg.DSG(text, model = model_SRL, out_file = 'test.csv')
+>>> model_SRl = 'https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz'
+>>> result = dsg.DSG(text, model = model_SRL, out_file = 'test.csv')
 ```
 
 The result is stored as a DataFrame and includes variabel information about the subject (S), the verb (V), the object (O), the means for the action (M), the place (P), time (T) and the tagged sentence (txt):
 
 ```python
->>>result
+>>> result
                S         V               O                M             P               T               txt
 0     the red fox   jumped   the old fence                -             -        Yesterday         [ARG0: The red fox] [V: jumped] [ARG1: the old...  
 1     The red fox     hits         the dog     with her paw             -               -          The red fox jumped the old fence . [ARG0: the
@@ -51,5 +51,14 @@ The result is stored as a DataFrame and includes variabel information about the 
 >>> 
 ```
 
+Before using the DSG algorithm, it may sometimes be necessary to link all words that refer to the same real-world entity (also known as coreference resolution). The module therefore includes the following function:
 
+```python
+
+>>> text = 'One afternoon, a fox which was out for a walk in the jungle came across a bunch of grapes hanging. Its mouth watered at the very sight of the grapes. The fox thought to himself that if it could get the bunch of grapes, it would be just the thing to quench its thirst in the sweltering heat of the afternoon.'
+>>> coref_text = coref(text)
+>>> print(coref_text)
+One afternoon, a fox which was out for a walk in the jungle came across a bunch of grapes hanging. a fox which was out for a walk in the jungle's mouth watered at the very sight of a bunch of grapes hanging. a fox which was out for a walk in the jungle thought to a fox which was out for a walk in the jungle that if a fox which was out for a walk in the jungle could get a bunch of grapes hanging, a bunch of grapes hanging would be just the thing to quench a fox which was out for a walk in the jungle's thirst in the sweltering heat of the afternoon.
+>>> 
+```
 
