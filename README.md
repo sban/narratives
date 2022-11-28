@@ -18,6 +18,7 @@ Install the program by downloading the DSG-program file from this site (DSG.py),
 from allennlp.predictors.predictor import Predictor
 import pandas as pd
 import re
+import spacy
 import DSG as dsg
 
 ```
@@ -55,7 +56,6 @@ Before using the DSG algorithm, it may sometimes be necessary to link all words 
 
 ```python 
 
-import spacy
 >>> text = 'One afternoon, a fox which was out for a walk in the jungle came across a bunch of grapes hanging. Its mouth watered at the very sight of the grapes. The fox thought to himself that if it could get the bunch of grapes, it would be just the thing to quench its thirst in the sweltering heat of the afternoon.'
 >>> model_CRF = 'https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2020.02.27.tar.gz'
 >>> coref_text = coref(text, model = model_CRF)
