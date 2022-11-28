@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Andrade"
+  given-names: "Stefan"
+  orcid: "https://orcid.org/0000-0003-3620-8957"
+title: "Digital Story Grammar: Python version"
+version: 1.0.2
+date-released: 2022-11-28
+url: "https://github.com/sban/narratives/"
+
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Andrade"
+    given-names: "Stefan"
+    orcid: "https://orcid.org/0000-0003-3620-8957"
+  - family-names: "Andersen"
+    given-names: "Ditte"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  doi: "10.1080/13645579.2020.1723205"
+  journal: "International Journal of Social Research Methodology"
+  start: 405 # First page number
+  end: 421 # Last page number
+  title: "Digital story grammar: a quantitative methodology for narrative analysis"
+  issue: 23
+  volume: 4
+  year: 2020
