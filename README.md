@@ -55,11 +55,13 @@ Before using the DSG algorithm, it may sometimes be necessary to link all words 
 
 ```python
 
+import allennlp_models.tagging
 >>> text = 'One afternoon, a fox which was out for a walk in the jungle came across a bunch of grapes hanging. Its mouth watered at the very sight of the grapes. The fox thought to himself that if it could get the bunch of grapes, it would be just the thing to quench its thirst in the sweltering heat of the afternoon.'
 >>> model_CRF = 'https://storage.googleapis.com/allennlp-public-models/coref-spanbert-large-2020.02.27.tar.gz'
 >>> coref_text = coref(text, model = model_CRF)
 >>> print(coref_text)
 One afternoon, a fox which was out for a walk in the jungle came across a bunch of grapes hanging. a fox which was out for a walk in the jungle's mouth watered at the very sight of a bunch of grapes hanging. a fox which was out for a walk in the jungle thought to a fox which was out for a walk in the jungle that if a fox which was out for a walk in the jungle could get a bunch of grapes hanging, a bunch of grapes hanging would be just the thing to quench a fox which was out for a walk in the jungle's thirst in the sweltering heat of the afternoon.
 >>> 
+
 ```
 
